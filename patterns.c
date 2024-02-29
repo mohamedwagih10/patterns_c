@@ -48,4 +48,80 @@ for (int j=1;j<=2*size-1; j++){
 }
 printf("\n");
 }
+    printf("========================================\n");
+    ////// pyramid
+    int line , spaces,star,SIZE=5;
+    for ( line = 0; line <= SIZE; line++)
+    {
+        for ( spaces = 1; spaces <=SIZE-line; spaces++)
+        {
+            printf(" ");
+        }
+        for ( star = 1; star <= line*2-1; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+    printf("========================================\n");
+    // inverse pyramid
+    int LINE,SPACE,STAR,SIZE2=5;
+    for ( LINE = SIZE2; LINE >=1 ; LINE--)
+    {
+        for ( SPACE = 1; SPACE <=SIZE2-LINE; SPACE++)
+        {
+            printf(" ");
+        }
+        for ( STAR = 1; STAR <= LINE*2-1; STAR++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+    printf("========================================\n");
+      /// the letter N
+      size=6;
+      int col;
+      for ( line = 1; line <=size; line++)
+      {
+        for ( col = 1; col <= size; col++)
+        {
+            if (col==1||col==size||line==col)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+            
+            
+        }
+        printf("\n");
+        
+      }
+      printf("========================================\n");
+      // letter X
+      size=8;
+      for ( line = 1; line <=size; line++)
+      {
+        for ( col = 1; col <= size; col++)
+        {
+            if (line+col-1==size||line==col)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+            
+            
+        }
+        printf("\n");
+        
+      }
+      
        }
